@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图像识别 Demo</title>
+    <style>
+        #preview { max-width: 300px; margin: 10px 0; }
+        #result { padding: 10px; border: 1px solid #ccc; }
+/* 在 <style> 标签中添加 */
+body {
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto; /* 居中显示 */
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#preview {
+    width: 100%;
+    height: auto;
+}
+    </style>
+</head>
+<body>
+    <h1>上传图片识别</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="uploadImage()">开始识别</button>
+    <div>
+        <img id="preview" src="#" alt="预览图">
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script> <!-- 存放 JavaScript 代码 -->
+</body>
+</html>
